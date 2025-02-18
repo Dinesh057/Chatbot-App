@@ -1,8 +1,16 @@
+import subprocess
+import sys
+
+# Ensure beautifulsoup4 is installed in the environment
+subprocess.check_call([sys.executable, "-m", "pip", "install", "beautifulsoup4"])
+
+# Now import BeautifulSoup
+from bs4 import BeautifulSoup
+
 import os
 import pandas as pd
 import streamlit as st
 import requests
-from bs4 import BeautifulSoup
 from langchain_openai import AzureChatOpenAI
 from langchain.agents.agent_types import AgentType
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
@@ -143,7 +151,6 @@ if uploaded_file:
         if df is not None:
             st.write("🔍 **File Data Preview:**")
             st.write(df.head())  # Show the first few rows of the data
-            
             # Add button to start querying after file upload
             if 'start_querying' not in st.session_state:
                 st.session_state.start_querying = False
