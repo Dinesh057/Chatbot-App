@@ -1,8 +1,7 @@
-streamlit==1.22.0
-pandas==1.5.3
-requests==2.31.0
-beautifulsoup4==4.12.2
-langchain-openai==0.2.0  # Adjust version based on the specific library you are using
-langchain==0.0.152  # Adjust based on the compatible version of your agent
-openai==0.27.4
-azure-ai-openai==0.1.0  # If you're using Azure OpenAI SDK
+streamlit==1.42.0
+pandas==2.2.3
+requests==2.32.3
+beautifulsoup4==4.13.3
+langchain-openai==0.3.3
+langchain==0.3.17
+openai==1.61.0
