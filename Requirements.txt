@@ -1,8 +1,11 @@
-streamlit==1.17.0
-pandas==1.5.3
+streamlit==1.42.1
+pandas==2.2.3
 langchain==0.0.148
-langchain_openai==0.0.4
+langchain_openai==0.0.4  # Add this line
 langchain_experimental==0.0.7
 openai==0.27.0
+
+
+
 
 
